@@ -1,0 +1,17 @@
+import java.util.*;
+class Main{
+    static String sub(String s,int st,int en){
+        String r="";
+        for(int i=st;i<en;i++) r+=s.charAt(i);
+        return r;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        int st=sc.nextInt(),en=sc.nextInt();
+        String a=sub(s,st,en);
+        String b=s.substring(st,en);
+        System.out.println(a);
+        System.out.println(a.equals(b));
+    }
+}

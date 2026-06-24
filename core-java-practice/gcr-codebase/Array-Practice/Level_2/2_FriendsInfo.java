@@ -1,0 +1,16 @@
+import java.util.*;
+class FriendsInfo{
+ public static void main(String[] a){
+  Scanner sc=new Scanner(System.in);
+  String n[]={"Amar","Akbar","Anthony"};
+  int age[]=new int[3],y=0;
+  double h[]=new double[3]; int t=0;
+  for(int i=0;i<3;i++){ age[i]=sc.nextInt(); h[i]=sc.nextDouble(); }
+  for(int i=1;i<3;i++){
+   if(age[i]<age[y]) y=i;
+   if(h[i]>h[t]) t=i;
+  }
+  System.out.println("Youngest="+n[y]);
+  System.out.println("Tallest="+n[t]);
+ }
+}
